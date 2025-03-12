@@ -218,6 +218,35 @@ button:hover {
         align-items: center;
         flex-direction: column;
         overflow: hidden;
+        
+           .chat-container {
+                width: 90%;  /* Réduction de la largeur sur mobile */
+                max-width: 350px;  /* Taille max adaptée */
+                padding: 15px;  /* Ajustement des marges internes */
+                border-radius: 50%; /* 🌟 Garde un effet rond */
+            }
+        
+            .input-container {
+                width: 90%; /* Ajuste la largeur */
+                font-size: 14px; /* Réduction du texte */
+                margin-top: 10px; /* Ajustement du positionnement */
+            }
+        
+            .message-container {
+                max-width: 85%; /* Empêche les messages d’être trop larges */
+                font-size: 14px; /* Texte plus adapté */
+            }
+        
+            .genie-img {
+                max-width: 75%; /* Réduit le Génie pour qu’il reste visible */
+                margin-top: -40px; /* Ajustement du placement */
+            }
+        
+            .title-text {
+                font-size: 16px; /* Texte du titre légèrement réduit */
+            }
+        
+    
     }
 
     /* 🔹 Adapter la taille du Génie */

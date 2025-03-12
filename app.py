@@ -20,7 +20,11 @@ def chat():
     response = ask_openai(user_message)  # Génie répond via OpenAI
     return jsonify({'response': response})
 
+
+# Vérifie si on est en local
+is_local = os.environ.get("RAILWAY_ENVIRONMENT") is None  
+
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # ✅ Récupère le port de Railway ou utilise 5000 par défaut
+    port = int(os.environ.get("PORT", 5001 if is_local else 5000))  
     app.run(host="0.0.0.0", port=port)
 
