@@ -1,3 +1,5 @@
+ import os
+
 from flask import Flask, render_template, request, jsonify
 from api import ask_openai  # Fonction qui interroge OpenAI
 
@@ -19,7 +21,6 @@ def chat():
     return jsonify({'response': response})
 
 
-    import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # Récupère le port de Railway ou utilise 5000 par défaut
