@@ -18,5 +18,11 @@ def chat():
     response = ask_openai(user_message)  # Génî répond via OpenAI
     return jsonify({'response': response})
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
+    import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Récupère le port de Railway ou utilise 5000 par défaut
+    app.run(host="0.0.0.0", port=port)
+
+
