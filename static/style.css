@@ -137,3 +137,54 @@ html, body {
         bottom: 0;
     }
 }
+
+/* ✅ Correction de l'alignement du champ de texte */
+#user-input {
+    position: relative;
+    width: 85%;
+    margin-top: 20px; /* 🔥 Espacement augmenté pour éviter le chevauchement */
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.7); /* 🔥 Retour à l'encadrement d'origine */
+}
+
+/* ✅ Correction du bouton "Envoyer" */
+button {
+    width: 70%;
+    margin-top: 10px; /* 🔥 Espacement ajusté */
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+/* ✅ Correction du défilement du chat sur Windows et mobiles */
+#chat-box {
+    width: 100%;
+    height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* ✅ Correction de l'affichage figé sur iPhone SE */
+@media (max-width: 375px) {
+    #chat-cloud {
+        top: 62%; /* 🔥 Ajustement pour ne pas écraser l'affichage */
+        width: 90%;
+    }
+
+    #geni-container {
+        top: 12%; /* 🔥 Descendre légèrement le Génie */
+    }
+
+    #user-input {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
