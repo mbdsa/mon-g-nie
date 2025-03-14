@@ -88,3 +88,10 @@ function playRandomSound() {
     audio.volume = 0.7;
     audio.play();
 }
+
+// Chargement dynamique de Bootstrap JS
+let bootstrapScript = document.createElement("script");
+bootstrapScript.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js";
+bootstrapScript.integrity = "sha384-rbsA2VBKQPHJkQn5eD62G8Z3p5s2se3deLwV8zIBrWlUZosv5YqetA6gfUq84O3a";
+bootstrapScript.crossOrigin = "anonymous";
+document.body.appendChild(bootstrapScript);
