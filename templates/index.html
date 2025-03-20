@@ -33,7 +33,6 @@
         }
 
         #geni {
-            width: 250px;
             width: 220px;
             height: auto;
         }
@@ -48,7 +47,6 @@
             width: 90%;
             max-width: 600px;
             position: absolute;
-            top: 55%;
             top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -76,14 +74,11 @@
         /* Bulle de Chat */
         #chat-container {
             position: relative;
-            width: 85%;
             width: 90%;
             max-width: 350px;
             height: auto;
-            background: rgba(255, 255, 255, 0.3);
             background: rgba(255, 255, 255, 0.4);
             padding: 15px;
-            border-radius: 20px;
             border-radius: 25px;
             display: flex;
             flex-direction: column;
@@ -156,17 +151,14 @@
         /* Ajustements pour Mobile */
         @media (max-width: 768px) {
             #geni {
-                width: 180px;
                 width: 160px;
             }
 
             #chat-cloud {
-                top: 65%;
                 top: 70%;
             }
 
             #chat-container {
-                width: 90%;
                 width: 95%;
                 padding: 10px;
             }
@@ -210,4 +202,3 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
-
