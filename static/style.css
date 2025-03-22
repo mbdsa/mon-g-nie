@@ -209,7 +209,8 @@ button:hover {
 .glow {
     animation: glowGeni 1.5s ease-in-out 2;
 }
-/* === 📱 Ajustements pour Mobile === */
+
+/* === 📱 Responsive Mobile === */
 @media (max-width: 768px) {
     html, body {
         background: url("/static/giant-dark-cloud.png") no-repeat center center fixed;
@@ -219,38 +220,8 @@ button:hover {
         align-items: center;
         flex-direction: column;
         overflow: hidden;
-        
-           .chat-container {
-                width: 90%;  /* Réduction de la largeur sur mobile */
-                max-width: 350px;  /* Taille max adaptée */
-                padding: 15px;  /* Ajustement des marges internes */
-                border-radius: 50%; /* 🌟 Garde un effet rond */
-            }
-        
-            .input-container {
-                width: 90%; /* Ajuste la largeur */
-                font-size: 14px; /* Réduction du texte */
-                margin-top: 10px; /* Ajustement du positionnement */
-            }
-        
-            .message-container {
-                max-width: 85%; /* Empêche les messages d’être trop larges */
-                font-size: 14px; /* Texte plus adapté */
-            }
-        
-            .genie-img {
-                max-width: 75%; /* Réduit le Génie pour qu’il reste visible */
-                margin-top: -40px; /* Ajustement du placement */
-            }
-        
-            .title-text {
-                font-size: 16px; /* Texte du titre légèrement réduit */
-            }
-        
-    
     }
 
-    /* 🔹 Adapter la taille du Génie */
     #geni-container {
         top: 15%;
     }
@@ -259,36 +230,63 @@ button:hover {
         width: 200px;
     }
 
-    /* 🔹 Adapter le Nuage */
     #chat-cloud {
         width: 90%;
         top: 70%;
+        flex-direction: column;
     }
 
-    /* 🔹 Ajuster la boîte de chat */
     #chat-container {
         width: 85%;
         height: auto;
         border-radius: 20px;
         padding: 15px;
-        background: rgba(255, 255, 255, 0.4); /* Ajout pour éviter qu'il devienne invisible */
+        background: rgba(255, 255, 255, 0.4);
     }
 
-    /* 🔹 Ajuster le texte */
     #prompt-text {
         font-size: 14px;
         width: 90%;
+        text-align: center;
     }
 
-    /* 🔹 Ajuster le champ de saisie */
+    #chat-box {
+        height: 180px;
+        font-size: 14px;
+    }
+
     #user-input {
         width: 100%;
+        font-size: 14px;
     }
 
-    /* 🔹 Ajuster le bouton */
     button {
         width: 90%;
-        font-size: 12px;
+        font-size: 13px;
+        padding: 8px;
     }
-}
 
+    /* Ajouts pour d'éventuelles classes utilisées */
+
+
+    .input-container {
+        width: 90%;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .message-container {
+        max-width: 85%;
+        font-size: 14px;
+    }
+
+    .genie-img {
+        max-width: 75%;
+        margin-top: -40px;
+    }
+
+    .title-text {
+        font-size: 16px;
+    }
+    
+}
