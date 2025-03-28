@@ -255,8 +255,8 @@ button:hover {
     }
   
     #cloud {
-      position: fixed;
-      width: 200%;
+      position: absolute;
+      width: 100%;
       height: auto;
       max-width: none;
       top: 50%;
