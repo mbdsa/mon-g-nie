@@ -210,7 +210,7 @@ button:hover {
     animation: glowGeni 1.5s ease-in-out 2;
 }
 
-/* === 📱 Responsive Mobile === */
+/* === 📱 Responsive Mobile — version corrigée === */
 @media (max-width: 768px) {
     html, body {
         background: url("/static/giant-dark-cloud.png") no-repeat center center fixed;
@@ -223,7 +223,7 @@ button:hover {
     }
 
     #geni-container {
-        top: 15%;
+        top: 8%;
     }
 
     #geni {
@@ -232,19 +232,29 @@ button:hover {
 
     #chat-cloud {
         width: 90%;
-        top: 70%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         flex-direction: column;
     }
 
+    #cloud {
+        position: absolute;
+        width: 160%;
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
     #chat-container {
-        width: 75%;
-        max-width: 230px;
-        height: 230px;
+        width: 250px;
+        height: 250px;
         border-radius: 25px;
         padding: 10px;
-        background: rgba(255, 255, 255, 0.35); /* Un peu plus transparent */
+        background: rgba(255, 255, 255, 0.35);
     }
-    
 
     #prompt-text {
         font-size: 14px;
@@ -269,9 +279,6 @@ button:hover {
         padding: 8px;
     }
 
-    /* Ajouts pour d'éventuelles classes utilisées */
-
-
     .input-container {
         width: 90%;
         font-size: 14px;
@@ -291,18 +298,4 @@ button:hover {
     .title-text {
         font-size: 16px;
     }
-
-    #cloud {
-        position: absolute;
-        width: 130%;
-        opacity: 1;
-        top: 20%;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
-    
-    }
-    
-    
-
+}
