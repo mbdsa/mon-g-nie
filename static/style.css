@@ -250,13 +250,14 @@ button:hover {
   
     #cloud {
       position: absolute;
-      width: 180%;
+      width: 250%;
       height: auto;
-      top: 50%;
+      top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
       opacity: 1;
       z-index: -1;
+      pointer-events: none;
     }
   
     #chat-container {
