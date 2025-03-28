@@ -10,7 +10,11 @@ html, body {
     flex-direction: column;
     background: url("/static/giant-dark-cloud.png") no-repeat center center fixed;
     background-size: cover;
-    overflow: hidden;
+    overflow: hidden; 
+    touch-action: none;
+    overscroll-behavior: contain;
+    
+    
 }
 
 /* === Génie flottant au-dessus du nuage === */
@@ -213,6 +217,10 @@ button:hover {
 /* === 📱 Responsive Mobile — version corrigée === */
 @media (max-width: 768px) {
     html, body {
+        width: 100vw;
+        height: 100vh;
+        touch-action: none;
+        overscroll-behavior: contain;
         background: url("/static/giant-dark-cloud.png") no-repeat center center fixed;
         background-size: cover;
         display: flex;
@@ -240,7 +248,7 @@ button:hover {
 
     #cloud {
         position: absolute;
-        width: 220%;
+        width: 180%;
         opacity: 1;
         top: 50%;
         left: 50%;
