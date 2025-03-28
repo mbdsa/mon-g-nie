@@ -216,6 +216,12 @@ button:hover {
 
 /* === 📱 Responsive Mobile — version corrigée === */
 @media (max-width: 768px) {
+    #cloud {
+        width: 220%;
+        top: 52;
+    } 
+
+    
     html, body {
       touch-action: none;
       overscroll-behavior: contain;
@@ -249,10 +255,11 @@ button:hover {
     }
   
     #cloud {
-      position: absolute;
-      width: 250%;
+      position: fixed;
+      width: 200%;
       height: auto;
-      top: 60%;
+      max-width: none;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       opacity: 1;

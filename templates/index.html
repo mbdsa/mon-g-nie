@@ -3,42 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
     <title>Chat Génie</title>
-    
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Uncial+Antiqua&display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    
+
     <!-- Ton fichier CSS personnalisé -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    
+
     <!-- Génie flottant -->
     <div id="geni-container">
         <img id="geni" src="{{ url_for('static', filename='geni.png') }}" alt="Génie">
     </div>
-    
-    <!-- Nuage et Bulle de Chat -->
+
+    <!-- Nuage + bulle de chat -->
     <div id="chat-cloud">
         <img id="cloud" src="{{ url_for('static', filename='cloud.png') }}" alt="Nuage">
+        
         <div id="chat-container">
-            
             <!-- Titre animé -->
             <p id="prompt-text">QUE DÉSIRE TON CŒUR, HUMAIN ?</p>
-            
+
             <!-- Zone de chat -->
             <div id="chat-box"></div>
-            
+
             <!-- Champ utilisateur -->
             <input type="text" id="user-input" placeholder="Pose ta question...">
             <button onclick="sendMessage()">Envoyer</button>
         </div>
     </div>
-    
+
+    <!-- Script -->
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
