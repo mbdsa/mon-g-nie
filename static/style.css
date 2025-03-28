@@ -217,98 +217,82 @@ button:hover {
 /* === 📱 Responsive Mobile — version corrigée === */
 @media (max-width: 768px) {
     html, body {
-        width: 100vw;
-        height: 100vh;
-        touch-action: none;
-        overscroll-behavior: contain;
-        background: url("/static/giant-dark-cloud.png") no-repeat center center fixed;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        overflow: hidden;
+      touch-action: none;
+      overscroll-behavior: contain;
+      background: url("/static/giant-dark-cloud.png") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      height: 100%;
     }
-
+  
     #geni-container {
-        top: 8%;
+      top: 4%;
     }
-
+  
     #geni {
-        width: 200px;
+      width: 200px;
     }
-
+  
     #chat-cloud {
-        width: 100%;
-        margin-top: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
+      position: relative;
+      width: 100%;
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 1;
     }
-
+  
     #cloud {
-        position: absolute;
-        width: 180%;
-        max-width: none;
-        height: auto;
-        opacity: 1;
-        top: 0%;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
+      position: absolute;
+      width: 180%;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      z-index: -1;
     }
-
-
+  
     #chat-container {
-        width: 250px;
-        height: 250px;
-        border-radius: 25px;
-        padding: 10px;
-        background: rgba(255, 255, 255, 0.35);
+      width: 250px;
+      height: 250px;
+      border-radius: 25px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.35);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-
+  
     #prompt-text {
-        font-size: 14px;
-        width: 90%;
-        text-align: center;
+      font-size: 14px;
+      width: 90%;
+      text-align: center;
+      margin-bottom: 10px;
     }
-
+  
     #chat-box {
-        height: 180px;
-        font-size: 13px;
-        padding: 8px;
+      height: 180px;
+      font-size: 13px;
+      padding: 8px;
     }
-
+  
     #user-input {
-        width: 100%;
-        font-size: 14px;
+      width: 100%;
+      font-size: 14px;
     }
-
+  
     button {
-        width: 90%;
-        font-size: 13px;
-        padding: 8px;
+      width: 90%;
+      font-size: 13px;
+      padding: 8px;
     }
-
-    .input-container {
-        width: 90%;
-        font-size: 14px;
-        margin-top: 10px;
-    }
-
-    .message-container {
-        max-width: 85%;
-        font-size: 14px;
-    }
-
-    .genie-img {
-        max-width: 75%;
-        margin-top: -40px;
-    }
-
-    .title-text {
-        font-size: 16px;
-    }
-}
+  }
+  
