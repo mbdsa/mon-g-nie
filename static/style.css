@@ -216,10 +216,6 @@ button:hover {
 
 /* === 📱 Responsive Mobile — version corrigée === */
 @media (max-width: 768px) {
-    #cloud {
-        width: 220%;
-        top: 52;
-    } 
 
     
     html, body {
@@ -244,28 +240,32 @@ button:hover {
     }
   
     #chat-cloud {
-      position: relative;
-      width: 100%;
-      margin-top: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      z-index: 1;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
     }
-  
+    
     #cloud {
-      position: absolute;
-      width: 50%;
-      height: auto;
-      max-width: none;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 1;
-      z-index: -1;
-      pointer-events: none;
-    }
+         
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 160%; /* ou ajuste si besoin (150-180%) */
+            height: auto;
+            opacity: 0.95;
+            z-index: -1;
+            animation: floatCloud 10s ease-in-out infinite;
+
+        }        
+    
   
     #chat-container {
       width: 250px;
@@ -303,4 +303,3 @@ button:hover {
       padding: 8px;
     }
   }
-  
