@@ -23,15 +23,12 @@
 
     <!-- Nuage + bulle de chat -->
     <div id="chat-cloud">
-        <div id="chat-container">
-            <img id="cloud" src="{{ url_for('static', filename='cloud.png') }}" alt="Nuage">
-
-            <p id="prompt-text">QUE DÉSIRE TON CŒUR, HUMAIN ?</p>
-            <div id="chat-box"></div>
-            <input type="text" id="user-input" placeholder="Pose ta question...">
-            <button onclick="sendMessage()">Envoyer</button>
-        </div>
+        <img id="cloud" src="{{ url_for('static', filename='cloud.png') }}" alt="Nuage">
         
+        <div id="chat-container">
+            <!-- Titre animé -->
+            <p id="prompt-text">QUE DÉSIRE TON CŒUR, HUMAIN ?</p>
+
             <!-- Zone de chat -->
             <div id="chat-box"></div>
 
